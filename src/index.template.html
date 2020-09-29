@@ -9,8 +9,8 @@
         <div class="pagina">
             <header class="header">
                 <div class="nombre-sitio">
-                    <h1 class="escritorio">AdminFlex</h1>
-                    <h1 class="movil">AF</h1>
+                    <img class="escritorio" src="static/Logo.png" alt="">
+                    <img class="movil" src="static/Logo.svg" alt="">
                 </div>
 
                 <div class="barra">
@@ -22,30 +22,212 @@
                     <div class="menu-derecho">
                         <div class="mensaje caja">
                             <a href="#">
-                                <i class="fas fa-comment-alt"></i>
-                                mensajes
                                 <span>20</span>
+                                <i class="fas fa-comment-alt"></i>
                             </a>
                         </div>
                         <div class="alertas caja">
                             <a href="#">
-                                <i class="fas fa-bell"></i>
-                                Alertas
                                 <span>10</span>
+                                <i class="fas fa-bell"></i>
                             </a>
                         </div>
                         <div class="cerrar caja">
+                            <i class="fas fa-user-alt"></i>
                             <a href="#">
                                 Cerrar session
                             </a>
                         </div>
+                        
                     </div>
                 </div>
             </header>
 
             <main class="contenedor-principal">
-                <h2>Hola</h2>
+                <aside class="sidebar">
+                    <div class="usuario">
+                        <img src="./static/user.jpg" alt="Usuario">
+                        <p>Bien Venido: <span>Avimael</span></p>
+                    </div>
+
+                    <div class="buscador">
+                        <input type="text" name="" id="" placeholder="Buscar....">
+                    </div>
+
+                    <div class="menu-admin">
+                        <h2>Menú</h2>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-address-book"></i>
+                                    Clientes
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-list"></i>
+                                            Ver Todos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-plus"></i>
+                                            Agregar Nuevo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chart-line"></i>
+                                    Ventas
+                                </a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-list"></i>
+                                            Ver Todos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-plus"></i>
+                                            Agregar Nuevo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-box"></i>
+                                    Inventario
+                                </a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-list"></i>
+                                            Ver Todos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-plus"></i>
+                                            Agregar Nuevo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-file-alt"></i>
+                                    Facturas
+                                </a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-list"></i>
+                                            Ver Todos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-plus"></i>
+                                            Agregar Nuevo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Calendario
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    Editar perfil
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="contenido">
+                      <h2>Administracion de clientes</h2>
+                        <form action="#" class="formulario">
+                            <div class="datos-personales container-principal">
+                                <p>Datos personales</p>
+                                <div class="container">
+                                    <div class="campo">
+                                        <label for="">Nombre (*)</label>
+                                        <input type="text" name="nombre" id="">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="">Apellidos (*)</label>
+                                        <input type="text" name="apellidos" id="">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="">Edad (*)</label>
+                                        <input type="number" name="edad" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacto container-principal">
+                                <p>Contacto</p>
+                                <div class="container">
+                                    <div class="campo">
+                                        <label for="">Correo (*)</label>
+                                        <input type="email" name="email" id="">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="">Telefono (*)</label>
+                                        <input type="text" name="telefono" id="">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="">Empresa (*)</label>
+                                        <input type="text" name="empresa" id="">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="">Direccion (*)</label>
+                                        <input type="text" name="empresa" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Otra-informacion container-principal">
+                                <p>Otra informacion</p>
+                                <div class="container">
+                                    <div class="campo expandir">
+                                        <label for="">Descripcion</label>
+                                        <textarea name="" id="" cols="5" rows="5"></textarea>
+                                    </div>
+                                    <div class="campo expandir">
+                                        <label for="">Menbresia</label>
+                                        <div class="opciones">
+                                            <input type="radio" name="Contat" id="" value="normal">
+                                            <label for="">Normal</label>
+                                            <input type="radio" name="Contat" id="" value="basico">
+                                            <label for="">Basico</label>
+                                            <input type="radio" name="Contat" id="" value="premium">
+                                            <label for="">Premium</label>
+                                            <input type="radio" name="Contat" id="" value="golg">
+                                            <label for="">Golg</label>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-boton">
+                                <input type="submit" value="Registrar" class="boton">
+                                <button class="boton">Cancelar</button>
+                            </div>
+                        </form>
+                </section>
             </main>
+
         </div>
 </body>
 </html>
